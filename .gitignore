@@ -1,14 +1,28 @@
-# Gleam build output
-build/
-*.beam
-*.ez
-erl_crash.dump
-
 # macOS
 .DS_Store
 
-# Course bundle and local session logs (not lab source)
-*.zip
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+
+# Python generated files
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# Gleam generated files
+build/
+
+# Local grading and monitoring data
+.grader/
 .provenance/
-.provenance-manifest
 .server_logs/
+
+# Downloaded archives and submission bundles
+*.zip
+
+# Course PDFs
+*.pdf

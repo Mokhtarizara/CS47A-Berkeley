@@ -1,0 +1,14 @@
+# Gleam build output
+build/
+*.beam
+*.ez
+erl_crash.dump
+
+# macOS
+.DS_Store
+
+# Course bundle and local session logs (not lab source)
+*.zip
+.provenance/
+.provenance-manifest
+.server_logs/
